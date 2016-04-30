@@ -3,7 +3,8 @@ a python module to ease making card games
 
 # Image License
 The images have the following license:
-````--------------------------- http://wheels-cards.wc.lt/ ---------------------------
+
+--------------------------- http://wheels-cards.wc.lt/ ---------------------------
 
 High quality PNG playing cards - 537x750
 
@@ -13,4 +14,4 @@ Terms of Use:
 - These playing cards can not be printed!
 - Personal use only!
 
---------------------------- http://wheels-cards.wc.lt/ ---------------------------````
+--------------------------- http://wheels-cards.wc.lt/ ---------------------------
