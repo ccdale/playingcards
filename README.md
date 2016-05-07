@@ -1,7 +1,13 @@
 # playingcards
 a python module to ease making card games
 
-# Image License
+## Testing
+`make test` will run the tests
+
+## Cleaning
+`make clean` will clean up after the tests
+
+## Image License
 The images have the following license:
 
 --------------------------- http://wheels-cards.wc.lt/ ---------------------------
