@@ -7,7 +7,7 @@ a python module to ease making card games
 ## Cleaning
 `make clean` will clean up after the tests
 
-## Image License
+### Image License
 The images have the following license:
 
 --------------------------- http://wheels-cards.wc.lt/ ---------------------------
