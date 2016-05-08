@@ -28,7 +28,8 @@ class Card:
               a string representation of the card return the image of the back of the card or the string 'Facedown'
     """
     self.cardnames=["Back","Ace","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"]
-    self.imgdir=os.path.join(os.getcwd(),"img")
+    modpath=os.path.abspath(os.path.dirname(__file__))
+    self.imgdir=os.path.join(modpath,"img")
     self.imgfile=""
     self.backimg=""
     self.facedown=facedown
