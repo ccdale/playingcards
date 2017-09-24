@@ -9,9 +9,9 @@ image and the back image.
 
 The Stack class is the representation of a stack of playing cards.
 
-The wCard class is a wx panel object to display a single card.
+The wxCard class is a wx panel object to display a single card.
 
-The wStack class is a wx panel object to display a stack of cards.
+The wxStack class is a wx panel object to display a stack of cards.
 
 To Use:
 from playingcards.cards import Card
@@ -19,11 +19,11 @@ from playingcards.cards import Stack
 
  - then -
 
-from playingcards.cards import wCard
+from playingcards.cards import wxCard
 
  - or -
 
-from playingcards.cards import wStack
+from playingcards.cards import wxStack
 
 """
 
@@ -123,7 +123,7 @@ class Card:
     """
     return self.facedown
 
-class wCard(wx.Panel):
+class wxCard(wx.Panel):
   """A wx panel object to show a playing card"""
   def __init__(self,parent,cindex,facedown=False):
     """"""
@@ -333,7 +333,7 @@ class Stack:
       s=""
     return "%d cards: %s" % (self.length(),s)
 
-class wStack:
+class wxStack:
   """a wx panel objeckt to display a stack of playing cards"""
   def __init__(self,parent,numberofdecks=0,noaces=0):
     wx.Panel.__init__(self,parent,-1,style=wx.FULL_REPAINT_ON_RESIZE)
