@@ -9,27 +9,13 @@ image and the back image.
 
 The Stack class is the representation of a stack of playing cards.
 
-The wxCard class is a wx panel object to display a single card.
-
-The wxStack class is a wx panel object to display a stack of cards.
-
 To Use:
-from playingcards.cards import Card
-from playingcards.cards import Stack
-
- - then -
-
-from playingcards.cards import wxCard
-
- - or -
-
-from playingcards.cards import wxStack
-
+from playingcards import Card
+from playingcards import Stack
 """
 
 import os.path
 import random
-import wx
 
 class Card:
   """Representation of a Playing Card"""
@@ -122,27 +108,6 @@ class Card:
     returns: boolean
     """
     return self.facedown
-
-class wxCard(wx.Panel):
-  """A wx panel object to show a playing card"""
-  def __init__(self,parent,cindex,facedown=False):
-    """"""
-    wx.Panel.__init__(self,parent,-1,style=wx.FULL_REPAINT_ON_RESIZE)
-    self.setupcard(cindex,facedown)
-
-  def setupcard(self,cindex,facedown):
-    # if we have previously setup the card, throw it away
-    # allow the GC to collect it
-    self.card=None
-    self.card=Card(cindex,facedown)
-    self.reimage()
-
-  def reimage(self):
-    self.img=wx.Image(self.card.image(), wx.BITMAP_TYPE_PNG)
-    x,y=self.GetSize()
-    img=self.img.Scale(x,y,wx.IMAGE_QUALITY_HIGH)
-    bmp=wx.BitmapFromImage(img)
-    self.bmp=wx.StaticBitmap(self,-1,bmp,(0,0))
 
 class Stack:
   """Representation of a stack of playing cards"""
@@ -332,20 +297,3 @@ class Stack:
     else:
       s=""
     return "%d cards: %s" % (self.length(),s)
-
-class wxStack:
-  """a wx panel objeckt to display a stack of playing cards"""
-  def __init__(self,parent,numberofdecks=0,noaces=0):
-    wx.Panel.__init__(self,parent,-1,style=wx.FULL_REPAINT_ON_RESIZE)
-    self.stack=Stack(numberofdecks=numberofdecks,noaces=noaces)
-
-  def reimage():
-    if self.stack.length() > 0:
-      self.img=wx.Image(self.topcard().image(),wx.BITMAP_TYPE_PNG)
-      x,y=self.GetSize()
-      img=self.img.Scale(x,y,wx.IMAGE_QUALITY_HIGH)
-      bmp=wx.BitmapFromImage(img)
-      self.bmp=wx.StaticBitmap(self,-1,bmp,(0,0))
-    else:
-      self.img=None
-      self.bmp=None

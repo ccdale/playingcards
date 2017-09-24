@@ -9,7 +9,7 @@ config = {
     'url': 'https://github.com/ccdale/playingcards',
     'download_url': 'https://github.com/ccdale/playingcards',
     'author_email': 'chris.charles.allison+playingcards@gmail.com',
-    'version': '1.0.2',
+    'version': '1.0.3',
     'install_requires': [],
     'packages': ['playingcards'],
     'package_dir': {'playingcards':''},
