@@ -1,19 +1,4 @@
-# playingcards
-A python module to ease making card games. 
-
-`make` on it's own will run the tests and install the package into your local `site-packages` tree.
-
-## Testing
-`make test` will run the tests.
-
-## Cleaning
-`make clean` will clean up after the tests.
-
-## Developing
-`make local` will install into your `~/.local/lib/python3.x/site-packages` tree.
-
-### Image License
-The images have the following license:
+These images are under the following license.
 
 --------------------------- http://wheels-cards.wc.lt/ ---------------------------
 

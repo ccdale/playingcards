@@ -1,6 +1,6 @@
 scripts=setup.py playingcards.py
 
-all: clean local test dist
+all: clean local test
 
 test:
 	python3 -xm unittest discover
