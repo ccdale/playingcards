@@ -6,9 +6,8 @@ setup(
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.7',
-    packages=['playingcards'],
-    package_dir={'playingcards':''},
+    version='1.0.9',
+    packages=[''],
     package_data={'':'img/*.png'},
     scripts=[],
     name='playingcards'

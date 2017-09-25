@@ -3,14 +3,15 @@ scripts=setup.py playingcards.py
 all: clean local test dist
 
 test:
-	python -xm unittest discover
+	python3 -xm unittest discover
 
 clean:
 	rm -f *.pyc
+	rm -rf dist/
 
 local:$(scripts)
-	pip install -e ./ --user
+	pip3 install -e ./ --user
 
 
 dist:$(scripts)
-	python setup.py sdist
+	python3 setup.py sdist
