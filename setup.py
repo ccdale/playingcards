@@ -13,9 +13,9 @@ setup(
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.31',
+    version='1.0.33',
     license='MIT',
-    packages=[''],
+    py_modules=['playingcards'],
     scripts=[],
     classifiers=[
       'Development Status :: 4 - Beta',
