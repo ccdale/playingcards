@@ -6,15 +6,14 @@ test:
 	python3 -xm unittest discover
 
 clean:
-	rm -f *.pyc
-	rm -rf dist/
+	rm -rf dist/ build/ *.pyc
 
 local:$(scripts)
 	pip3 install -e ./ --user
 
 
 dist:$(scripts) clean
-	python3 setup.py sdist
+	python3 setup.py sdist bdist_wheel
 	gpg --detach-sign -a dist/*.tar.gz
 
 upload:
