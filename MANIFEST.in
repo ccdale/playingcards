@@ -1,1 +1,2 @@
 graft img
+global-include *.md
