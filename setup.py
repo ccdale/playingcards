@@ -8,12 +8,12 @@ def readfn(fname):
 setup(
     name='SimplePlayingCards',
     description='Simple pair of classes to represent playing cards in python games',
-    long_description=readfn('README.md')
+    long_description=readfn('README.md'),
     author='Chris Allison',
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.35',
+    version='1.0.37',
     license='MIT',
     py_modules=['playingcards'],
     scripts=[],
