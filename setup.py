@@ -7,7 +7,7 @@ setup(
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.21',
+    version='1.0.24',
     license='MIT',
     packages=[''],
     scripts=[],
