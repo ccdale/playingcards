@@ -13,5 +13,9 @@ local:$(scripts)
 	pip3 install -e ./ --user
 
 
-dist:$(scripts)
+dist:$(scripts) clean
 	python3 setup.py sdist
+	gpg --detach-sign -a dist/*.tar.gz
+
+upload:
+	twine upload dist/SimplePlayingCards*tar.gz dist/SimplePlayingCards*asc
