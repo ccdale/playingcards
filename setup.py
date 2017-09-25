@@ -1,13 +1,13 @@
 from distutils.core import setup
 
 setup(
-    name='playingcards',
-    description='Set of classes to represent playing cards in python games',
+    name='SimplePlayingCards',
+    description='Simple pair of classes to represent playing cards in python games',
     author='Chris Allison',
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.24',
+    version='1.0.26',
     license='MIT',
     packages=[''],
     scripts=[],
