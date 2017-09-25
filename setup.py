@@ -1,13 +1,19 @@
-from distutils.core import setup
+# from distutils.core import setup
+from setuptools import setup
+import os
+
+def readfn(fname):
+  return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name='SimplePlayingCards',
     description='Simple pair of classes to represent playing cards in python games',
+    long_description=readfn('README.md')
     author='Chris Allison',
     url='https://github.com/ccdale/playingcards',
     download_url='https://github.com/ccdale/playingcards',
     author_email='chris.charles.allison+playingcards@gmail.com',
-    version='1.0.29',
+    version='1.0.31',
     license='MIT',
     packages=[''],
     scripts=[],
